@@ -19,7 +19,7 @@ def gradientdescent(theta,X,y,iterations):
     J_history=np.zeros(iterations)
     m=y.shape[0]
     alpha=0.3
-    for iteration in range(iterations):
+    for iter in range(iterations):
         theta=theta-np.dot(X.transpose(),np.dot(X,theta)-y)*alpha/m
         J_history[iteration]=costfunction(theta,X,y)
 
